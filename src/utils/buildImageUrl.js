@@ -18,7 +18,7 @@ function buildImageUrl(originalPath, image) {
 
   let filters = [
     ...[quality && `quality:(${quality})`],
-    ...[format && format !== extension && `format:(${format})`],
+    ...[format && format !== extension && `format(${format})`],
     ...[fill && `fill:(${fill})`]
   ]
 
